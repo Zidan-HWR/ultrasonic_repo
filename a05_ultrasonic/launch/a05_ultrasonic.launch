@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="a05_ultrasonic" type="a05_ultrasonic_node" name="a05_ultrasonic_node" output="screen">
+        <param name="port" type="string" value="/dev/tars_ultrasonic_hub" />
+        <param name="baudrate" type="int" value="9600" />
+        <param name="simulate" type="bool" value="false" />
+        <param name="publish_rate" type="double" value="10.0" />
+    </node>
+</launch>
